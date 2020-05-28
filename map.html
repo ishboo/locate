@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="aframe.min.js"></script>
+	<style>
+	  a-scene {
+  height: 300px;
+  width: 600px;
+}
+	  </style> 
+	  <script>
+		  function myFunction(room) {
+  document.querySelector('a-sky').setAttribute('src', room)
+}
+	  </script>
+	  
+  </head>
+  <body>
+	  <center>
+	  <img src="gp.png" alt="" width="571" height="563" usemap="#gp" class="gp" border="0"/>
+      <map name="gp">
+        <area shape="rect" coords="229,394,356,513" href="#guest" onclick="myFunction('guest.jpg')">
+        <area shape="rect" coords="15,142,227,354" href="#garage" onclick="myFunction('garage.jpg')">
+        <area shape="poly" coords="228,169,231,292,301,295,305,236,373,232,371,173" href="#hall"  onclick="myFunction('hall.jpg')">
+        <area shape="rect" coords="356,337,543,454" href="#foyer" onclick="myFunction('foyer.jpg')">
+        <area shape="rect" coords="301,237,350,313" href="#bath" onclick="myFunction('bath.jpg')">
+        <area shape="rect" coords="230,17,370,170" href="#master" onclick="myFunction('master.jpg')">
+        <area shape="rect" coords="371,196,545,321" href="#kitchen" onclick="myFunction('kitchen.jpg')">
+        <area shape="rect" coords="231,296,316,393" href="#flex" onclick="myFunction('flex.jpg')">
+        <area shape="rect" coords="370,11,559,193" href="#living" onclick="myFunction('living.jpg')">
+      </map>
+<p>
+	  
+   
+  <a-scene embedded>
+	   <a-sky src="R0010064_20190703090626.jpg" rotation="0 -130 0"></a-sky>
+     
+  </a-scene>
+</body>
+</html>
